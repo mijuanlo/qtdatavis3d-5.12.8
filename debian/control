@@ -1,0 +1,101 @@
+Source: qtdatavis3d-everywhere-src
+Section: libs
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Pino Toscano <pino@debian.org>,
+           Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
+           Dmitry Shachnev <mitya57@debian.org>,
+           Simon Quigley <tsimonq2@debian.org>
+Build-Depends: debhelper (>= 11~),
+               pkg-kde-tools,
+               qml-module-qtquick2,
+               qml-module-qttest,
+               qtbase5-dev (>= 5.12.8+dfsg~),
+               qtbase5-private-dev (>= 5.12.8+dfsg~),
+               qtdeclarative5-dev (>= 5.12.8~),
+               xauth <!nocheck>,
+               xvfb <!nocheck>
+Build-Depends-Indep: doc-base,
+                     qtbase5-doc-html (>= 5.12.8+dfsg~) <!nodoc>,
+                     qttools5-dev-tools (>= 5.12.8~) <!nodoc>
+Standards-Version: 4.4.1
+Homepage: https://doc.qt.io/qt-5/qtdatavisualization-index.html
+Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qtdatavis3d.git
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtdatavis3d
+
+Package: libqt5datavisualization5
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 Data Visualization module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains a set of APIs to visualize data in 3D as bar, scatter,
+ and surface graphs.
+
+Package: libqt5datavisualization5-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libqt5datavisualization5 (= ${binary:Version}),
+         qtbase5-dev,
+         ${misc:Depends}
+Description: APIs for data visualization functionality - development files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the development files needed to build Qt applications
+ using the Qt Data Visualization library.
+
+Package: qml-module-qtdatavisualization
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: qml-module-qtquick2, ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 Data Visualization QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Data Visualization QML module for QtDeclarative.
+
+Package: qtdatavisualization5-doc
+Build-Profiles: <!nodoc>
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Qt 5 Data Visualization documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the documentation for the Qt 5 Data Visualization
+ library.
+
+Package: qtdatavisualization5-doc-html
+Build-Profiles: <!nodoc>
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Qt 5 Data Visualization HTML documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the HTML documentation for the Qt 5 Data Visualization
+ library.
+
+Package: qtdatavisualization5-examples
+Architecture: any
+Multi-Arch: same
+Section: x11
+Pre-Depends: ${misc:Pre-Depends}
+Depends: qml-module-qtdatavisualization (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Examples for Qt 5 Data Visualization module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the examples for Qt5 data visualization application
+ development.

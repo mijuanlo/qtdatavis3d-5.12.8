@@ -1,0 +1,7 @@
+usr/include/*/qt5/QtDataVisualization/
+usr/lib/*/cmake/Qt5DataVisualization/Qt5DataVisualizationConfig.cmake
+usr/lib/*/cmake/Qt5DataVisualization/Qt5DataVisualizationConfigVersion.cmake
+usr/lib/*/libQt5DataVisualization.prl
+usr/lib/*/libQt5DataVisualization.so
+usr/lib/*/pkgconfig/Qt5DataVisualization.pc
+usr/lib/*/qt5/mkspecs/modules/qt_lib_datavisualization.pri

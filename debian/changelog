@@ -1,0 +1,73 @@
+qtdatavis3d-everywhere-src (5.12.8-0ubuntu1) focal; urgency=medium
+
+  * New upstream bugfix release.
+  * Bump Qt build-dependencies to 5.12.8.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 10 Apr 2020 12:27:08 +0300
+
+qtdatavis3d-everywhere-src (5.12.5-1build1) focal; urgency=medium
+
+  * No-change rebuild for libgcc-s1 package name change.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 23 Mar 2020 07:23:44 +0100
+
+qtdatavis3d-everywhere-src (5.12.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.12.5.
+  * Bump Standards-Version to 4.4.1, no changes needed.
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 21 Oct 2019 18:45:01 +0300
+
+qtdatavis3d-everywhere-src (5.12.4-1) experimental; urgency=medium
+
+  [ Scarlett Moore ]
+  * Update packaging to use doc-base as per policy 9.10.
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.12.4.
+  * Simplify debian/rules by using a debian/not-installed file.
+  * Add support for nocheck build profile.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 28 Jun 2019 22:02:13 +0300
+
+qtdatavis3d-everywhere-src (5.12.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.12.2.
+  * Remove QT_LOGGING_RULES export from tests command, no longer needed.
+  * Add Qt_5.12 version tag to libqt5datavisualization5.symbols.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 27 Mar 2019 00:07:25 +0300
+
+qtdatavis3d-everywhere-src (5.11.3-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+  [ Simon Quigley ]
+  * Change my email to tsimonq2@debian.org now that I am a Debian Developer.
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Bump all the Qt build dependencies to >= 5.11.3.
+  * Bump Standards-Version to 4.3.0, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Thu, 27 Dec 2018 17:26:13 +0100
+
+qtdatavis3d-everywhere-src (5.11.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update copyright.
+  * Bump all the Qt build dependencies to >= 5.11.2.
+  * Bump Standards-Version to 4.2.1, no changes required.
+  * Update symbols file.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 05 Nov 2018 07:33:21 +0100
+
+qtdatavis3d-everywhere-src (5.10.1-1) experimental; urgency=medium
+
+  * Initial release.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 30 Apr 2018 06:54:43 +0200
