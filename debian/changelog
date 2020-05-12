@@ -1,3 +1,9 @@
+qtdatavis3d-everywhere-src (5.12.8-0ubuntu1+lliurex) bionic; urgency=medium
+
+  * Port to bionic
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 12 May 2020 18:27:26 +0200
+
 qtdatavis3d-everywhere-src (5.12.8-0ubuntu1) focal; urgency=medium
 
   * New upstream bugfix release.
